@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>faturamento</title>
+</head>
+<body>
+    <button onclick="faturamento()" class='btb btn-success' id="faturamento" style="height: 40px;">Todas Vendas</button>
+    <button onclick="totalDasVendas()" class="btn btn-success">Valor Total Vendido</button>
+    <a href="index.html" ><button class="btn btn-success">Inicio</button></a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Quantidade</th>
+                <th>valor</th>
+                <th>total</th>
+            </tr>
+
+        </thead>
+        <tbody id="corpoDaTabela">
+
+        </tbody>
+    </table>
+    <h1 id="respstaDeTodosValores"></h1>
+    <script src="js/javascript.js"></script>
+</body>
+</html>

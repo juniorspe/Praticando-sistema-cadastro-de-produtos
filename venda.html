@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Real</title>
+    <link rel="stylesheet" href="style/venda.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+<body>
+    <nav id="heder" class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+        
+          <a  class="btn btn-success" href="cadastro.html">Cadastro De Produtos!</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="btn btn-success" style="margin-left: 5px;" aria-current="page" href="index.html">Inicio</a>
+              </li>
+            
+       
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <form class="d-flex" id="formBusca">
+                <input id="codigoBArras_vender"  autofocus class="form-control me-2" type="search" placeholder="Codigo de Barras"  aria-label="Search">
+                <button id="buscarVendas" class="btn btn-success" style="margin-left: 2px;" >Vender</button>
+              </form>
+              <input id="troco" type="number"   >
+              <button id="trocou" class="btn btn-success" >Calcular Troco</button>
+              <button class="btn btn-success" style="margin-left:5px ;" onclick="cadastraVenda()">Fnalizar Venda</button>
+        
+
+          
+
+            </ul>
+        
+         
+          </div>
+        </div>
+      </nav>   
+
+    <div id="imprimi" style="text-align: center;">
+     
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>
+              Nome
+            </th>
+            <th>
+              Quatidade
+            </th>
+            <th>
+              Valor
+            </th>
+          </tr>
+        </thead>
+        <tbody id="respostaVenda">
+
+        </tbody>
+      </table>
+      <h2 id="total">00,00</h2><h2 class="clientTroco"></h2>
+      <button  onclick="window.print();" class="noPrint, btn btn-success" style="position: relative; right:-500px;">
+        Imprimir!
+      </button>
+    </div>
+     <script src="js/venda.js"></script>
+</body>
+    
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>cadastro de produtos</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="style/min.css">
+
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="cadastro.html">Cadastro De Produtos!</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+            
+       
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+       
+            </ul>
+       
+          </div>
+        </div>
+      </nav>
+	<div id="form"  class="form-group">
+		<form class="form-group"  id="form">
+		
+			<ul >	
+				<li><label>Nome do Produto!<br/><br/><input type="text" id="nomeP" name="nomeP"></label></li>
+				<li><label for="">Valor de Compra do Produto! <br/><br/><input type="number" step="0.01" id="valoI"> </label></li><br/>
+				<li><label>Marmagem  <br/><br/><input type="number" id="margen"></label></li>
+				<li><label>Codigo de Barras! <br/><br/><input type="number" id="codigoB"></label></li>
+				<li><label for="">Quantidade de Produtos! <br/><br/><input typ = "number" id = "quanti"></label> </li>
+
+				<input class="btn btn-success margen-top;20px:" type="submit" value="Cadastrar!" id="button">
+			</ul>		
+			
+			
+		</form>
+		
+	</div>
+	<script src="js/cadastro.js"></script>
+
+	
+</body>
+</html>

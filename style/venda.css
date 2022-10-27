@@ -1,0 +1,39 @@
+body, html{
+    width: 100vw;
+    height: 100vh;
+}
+.row{
+    width: 100%;
+    height: 100%;
+    display:flex ;
+}
+.produtos{
+    flex:1;
+    height: 100%;
+    padding: 20px;
+    border-right:1px solid black ;
+}
+.carrinho{
+    flex:1;
+    height: 100%;
+}
+#busca{
+    width: 100%;  
+}
+.sumir{
+    position: absolute;
+    left: -200px;
+}
+@media print{
+    body*{
+        visibility: hidden;
+    }
+    #imprimi{
+        visibility: visible;
+    }
+    #imprimi{
+        position: absolute;
+        left: 20%;
+        top: 10%;
+    }
+}
